@@ -21,22 +21,16 @@ Once QMK setup is done, clone this repository inside your existing [qmk_firmware
 git submodule add https://github.com/trilowy/quacken-qmk.git keyboards/quacken
 ```
 
-Compile the firmware:
+Build the default keymap:
 
 ```sh
 qmk compile -kb quacken -km default
 ```
 
-Build the default keymap:
-
-```sh
-make quacken:default
-```
-
 Flash the default keymap:
 
 ```sh
-make quacken:default:flash
+qmk flash -kb quacken -km default
 ```
 
 
