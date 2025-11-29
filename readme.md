@@ -59,3 +59,7 @@ The matrix looks like this:
              │3,3│3,4│3,5│       │7,5│7,4│7,3│
              └───┴───┴───┘       └───┴───┴───┘
 ```
+
+It’s declared row by row in [keyboard.json](./keyboard.json), in the same order as in [keymap.c](./keymaps/default/keymap.c).
+
+If you soldered the MCU with the components facing the PCB, please uncomment the other "matrix_pins" in `keyboard.json`.
